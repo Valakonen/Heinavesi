@@ -6,6 +6,8 @@
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
+<script src="events.js"></script>
+
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -19,6 +21,10 @@
         <div class="btn help" onclick="changeProductInfo(0)">Tuote1</div>
         <div class="btn help" onclick="changeProductInfo(1)">Tuote2</div>
       -->
+    </div>
+
+    <div id="info">
+      <h1>Info ikkuna</h1>
     </div>
 
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="logarithmicDepthBuffer: true; colorManagement: true; precision: high;" vr-mode-ui="enabled: false">
