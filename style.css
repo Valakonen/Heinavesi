@@ -1,0 +1,91 @@
+.btns-wrap
+{
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 9000;
+}
+
+.btn
+{
+  user-select: none;
+  background: blue;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+  font-size: 16px;
+
+  background-color: #9C9D9F;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:active {
+  background-color: #9C9D9F;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.help
+{
+    user-select: none;
+    background-color: #0c8ac0;
+    color: white;
+    font-family: Arial;
+}
+
+#info
+{
+  z-index: 9900;
+  background-color: #096186;
+  position: absolute;
+  color: white;
+  font-family: Arial;
+  display: none;
+  margin: 5%;
+  padding: 4%;
+  max-height: 70%;
+  min-width: 85%;
+  max-width: 85%;
+  top: 5%;
+  left: 45%;
+  transform: translate(-50%, -5%);
+  border-radius: 8px;
+
+  overflow: auto;
+}
+
+#productDescription
+{
+  background-color: #5cc7f5;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+
+}
+
+.ingredientTitle
+{
+  background-color: #0c8ac0;
+  color: white;
+  font-family: Arial;
+  margin: 8px 0 0 0;
+  padding: 8px;
+  border: 1px;
+  border-radius: 20px 20px 0 0;
+}
+
+.ingredientText
+{
+  background-color: #5cc7f5;
+  color: black;
+  font-family: Arial;
+  border: 1px;
+  border-radius: 0 0 20px 20px;
+  margin: 0;
+  padding: 8px;
+  display: none;
+}
