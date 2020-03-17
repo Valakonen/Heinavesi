@@ -1,0 +1,59 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+  <body style='margin : 0px; overflow: hidden;'>
+
+    <div class="btns-wrap">
+      <div class="btn help" onclick="toggleInfo()">Info</div>
+      <!-- test buttons
+        <div class="btn help" onclick="removeIngredients()">Remove</div>
+        <div class="btn help" onclick="changeProductInfo(0)">Tuote1</div>
+        <div class="btn help" onclick="changeProductInfo(1)">Tuote2</div>
+      -->
+    </div>
+
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="logarithmicDepthBuffer: true; colorManagement: true; precision: high;" vr-mode-ui="enabled: false">
+
+            <a-assets>
+
+            </a-assets>
+
+     <a-entity camera>
+
+            <!-- 3D logo test -->
+            <a-marker smooth='true' size='0.05' type='barcode' value='0' registerevents>
+
+            </a-marker>
+
+            <!-- Animation test -->
+            <a-marker smooth='true' type='barcode' value='1' registerevents>
+
+            </a-marker>
+
+            <!-- 3D scene test -->
+             <a-marker smooth='true' type='barcode' value='2' registerevents>
+
+            </a-marker>
+
+            <!-- Text test -->
+            <a-marker smooth='true' type='barcode' value='3' registerevents>
+
+            </a-marker>
+
+           <a-marker smooth='true' type='barcode' value='4' registerevents>
+
+           </a-marker>
+
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
