@@ -1,3 +1,17 @@
+let places;
+
+fetch("./places.json")
+  .then(function(resp)
+{
+  return resp.json();
+})
+.then(function(data)
+{
+  console.log(data);
+  places = data;
+})
+
+
 // Info screen toggle
 let infoActivated = false;
 let lastDetectedMarker;
@@ -55,7 +69,7 @@ AFRAME.registerComponent('registerevents', {
         }
         else if (markerValue == 1)
         {
-          
+
         }
         else if (markerValue == 3)
         {
