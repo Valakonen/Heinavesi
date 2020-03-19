@@ -58,6 +58,12 @@
   overflow: auto;
 }
 
+#placeTitle
+{
+  font-family: Arial;
+  font-size: 1.5em;
+}
+
 #placeDescription
 {
   background-color: #5cc7f5;
@@ -65,29 +71,6 @@
   padding: 10px;
   border-radius: 4px;
 
-}
-
-.ingredientTitle
-{
-  background-color: #0c8ac0;
-  color: white;
-  font-family: Arial;
-  margin: 8px 0 0 0;
-  padding: 8px;
-  border: 1px;
-  border-radius: 20px 20px 0 0;
-}
-
-.ingredientText
-{
-  background-color: #5cc7f5;
-  color: black;
-  font-family: Arial;
-  border: 1px;
-  border-radius: 0 0 20px 20px;
-  margin: 0;
-  padding: 8px;
-  display: none;
 }
 
 .iframe-container {

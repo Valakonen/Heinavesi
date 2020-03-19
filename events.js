@@ -55,6 +55,7 @@ AFRAME.registerComponent('registerevents', {
         }
         else if (markerValue == 1)
         {
+          
         }
         else if (markerValue == 3)
         {
