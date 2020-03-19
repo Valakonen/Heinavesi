@@ -11,7 +11,6 @@ fetch("./places.json")
   places = data;
 })
 
-
 // Info screen toggle
 let infoActivated = false;
 let lastDetectedMarker;
@@ -27,14 +26,13 @@ function toggleInfo()
   {
     document.getElementById("info").style.display = "block";
   }
-  audioInfoBtn.play();
 
   if(infoActivated == false)
   {
     if(lastDetectedMarker != null)
     {
       infoActivated == true;
-      changeProductInfo(lastDetectedMarker);
+      changePlaceInfo(lastDetectedMarker);
     }
   }
   else
@@ -42,6 +40,16 @@ function toggleInfo()
     infoActivated == false;
   }
 };
+
+// changes info text, image and video to match marker
+function changePlaceInfo(markerNumber)
+{
+  document.getElementById("placeTitle").innerHTML = places[markerNumber].name;
+  document.getElementById("placeDescription").innerHTML = places[markerNumber].description;
+  document.getElementById("infoVideo").src = places[markerNumber].videoLink;
+  document.getElementById("infoKartta").src = places[markerNumber].mapImage;
+};
+
 
 window.addEventListener('camera-init', (data) => {
     console.log('camera-init', data);

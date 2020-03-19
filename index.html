@@ -16,39 +16,22 @@
 
     <div class="btns-wrap">
       <div class="btn help" onclick="toggleInfo()">Info</div>
+      <div class="btn help" onclick="changePlaceInfo(0)">Paikka1</div>
+
       <!-- test buttons
         <div class="btn help" onclick="removeIngredients()">Remove</div>
-        <div class="btn help" onclick="changeProductInfo(0)">Tuote1</div>
+        <div class="btn help" onclick="changePlaceInfo(0)">Paikka1</div>
         <div class="btn help" onclick="changeProductInfo(1)">Tuote2</div>
       -->
     </div>
 
     <div id="info">
-      <h1 id="placeTitle">Juutilanvuoren kasvokivi ja Hoikansaari</h1>
-      <p id="placeDescription">Nämä kaksi kuvaa ja paikkaa liittyvät selvästi toisiinsa. Hoikansaari on kaunis Kermajärven saari, jossa on
-        kallion harjalla pronssikautinen hautaröykkiö eli niin kutsuttu lapinraunio. Hoikansaaren haudan tekee
-        erikoiseksi, että sen vieressä on myös paikalleen vieritetty, nuolen pään mallinen uhrikivi. Viime mainitun
-        vahvisti geologi Aimo Kejosen ihmisen asettamaksi vuonna 2010, ja samassa yhteydessä arkeologi Timo
-        Miettinen totesi, että moinen uhrikiven ja hauda
-        n yhdistelmä on Suomessa ainutlaatuinen.<br><br>
-
-        Juutilanvuoren kasvokivi on toisella puolen Kermajärveä Hoikansaaresta neljä kilometriä etelään. Kivestä voi
-        erottaa selvät kasvonpiirteet, sillä keskellä kiveä on kahdesta halkeamasta muodostuvat silmät ja alempana
-        oikealla paikalla kohoumista muodostuvat huulet. Kiven kasvoseinä on tasainen ja se katsoo Kermajärvelle
-        päin. Kun kasvojen suuntaa tutkii kompassilla, katseen suunta on yhtä astetta vaille suoraan kohti
-        Hoikansaarta. <br><br>
-
-        Näkijän välittämän laajan tarina - aineiston mukaan kiven juurella on sijainnut pronssikautinen kylä, jossa on
-        asunut yli 20 - henkinen, vauras ja kehittynyt keräilijäheimo. Kylässä on ollut sekä kotia että jonkinlaisia
-        hirsitaloja. Hoikansaari on ollut kyseisen heimon pyhä paikka, johon kokoonnuttiin koko heimon yhteiseen juhlaan kesäpäivän seisauksen (eli nykyinen juhannus) ja talvipäivän seisauksen (nykyinen joulu) aikaan.<br><br>
-
-        Tarinan mukaan kylän alkuaan rakentaneen heimon tarina päättyi, kun se oli palaamassa talvipäivänseisauksen juhlasta
-        ja kohtasi aseettomana järven jäällä toisen, väkivaltaisen heimon, joka tuli valtaamaan
-        kylää.</p>
+      <h1 id="placeTitle"></h1>
+      <p id="placeDescription"></p>
         <div class="iframe-container">
-          <iframe id="video" src="https://www.youtube.com/embed/GLyH92cp1vQ" allowfullscreen></iframe>
+          <iframe id="infoVideo" src="" allowfullscreen></iframe>
         </div>
-      <img src="Images\Hoikansaari.png" alt="" width="100%">
+      <img id="infoKartta" src="" alt="" width="100%">
     </div>
 
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="logarithmicDepthBuffer: true; colorManagement: true; precision: high;" vr-mode-ui="enabled: false">
