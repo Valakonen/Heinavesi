@@ -41,6 +41,11 @@ function toggleInfo()
   }
 };
 
+function changeAudioSource(markerNumber)
+{
+  document.getElementById("audioPlayer").setAttribute('src', places[markerNumber].narrationLink);
+};
+
 // changes info text, image and video to match marker
 function changePlaceInfo(markerNumber)
 {
@@ -68,6 +73,7 @@ AFRAME.registerComponent('registerevents', {
 
         // update variable so info window can load right product
         lastDetectedMarker = markerValue;
+        changeAudioSource(lastDetectedMarker);
 
 				// TODO: Add your own code here to react to the marker being found.
         if (markerValue == 0)
