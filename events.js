@@ -50,7 +50,6 @@ function changePlaceInfo(markerNumber)
   document.getElementById("infoKartta").src = places[markerNumber].mapImage;
 };
 
-
 window.addEventListener('camera-init', (data) => {
     console.log('camera-init', data);
 })
