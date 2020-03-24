@@ -1,9 +1,9 @@
 let lastDetectedMarker;
-var parentWindow = parent;
+var parentWindow = window.parent;
 
 function changeAudioSource(markerNumber)
 {
-  parentWindow.document.getElementById("audioPlayer").setAttribute('src', places[markerNumber].narrationLink);
+  parent.document.getElementById("audioPlayer").setAttribute('src', parent.places[markerNumber].narrationLink);
 };
 
 window.addEventListener('camera-init', (data) => {
