@@ -15,6 +15,11 @@ fetch("./places.json")
 let infoActivated = false;
 let lastDetectedMarker;
 
+function disablear()
+{
+  document.getElementById("arView").style.display = "none";
+};
+
 function toggleInfo()
 {
 
