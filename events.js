@@ -72,8 +72,12 @@ AFRAME.registerComponent('registerevents', {
 				var markerValue = marker.getAttribute("value");
 
         // update variable so info window can load right product
-        lastDetectedMarker = markerValue;
-        changeAudioSource(lastDetectedMarker);
+
+        if (lastDetectedMarker != markerValue)
+        {
+          lastDetectedMarker = markerValue;
+          changeAudioSource(lastDetectedMarker);
+        }       
 
 				// TODO: Add your own code here to react to the marker being found.
         if (markerValue == 0)
