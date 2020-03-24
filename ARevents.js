@@ -1,5 +1,5 @@
 let lastDetectedMarker;
-var parentWindow = window.parent;
+var parentWindow = parent;
 
 function changeAudioSource(markerNumber)
 {
