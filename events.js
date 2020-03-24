@@ -1,4 +1,4 @@
-let places;
+var places;
 
 fetch("./places.json")
   .then(function(resp)
@@ -13,7 +13,7 @@ fetch("./places.json")
 
 // Info screen toggle
 let infoActivated = false;
-let lastDetectedMarker;
+var lastDetectedMarker;
 
 function disablear()
 {
