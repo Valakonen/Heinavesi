@@ -28,7 +28,7 @@ AFRAME.registerComponent('registerevents', {
         if (lastDetectedMarker != markerValue)
         {
           lastDetectedMarker = markerValue;
-          parentWindow.lastDetectedMarker = lastDetectedMarker;
+          parentWindow.lastDetectedMarker = markerValue;
           changeAudioSource(lastDetectedMarker);
         }
 
