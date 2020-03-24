@@ -73,11 +73,12 @@ AFRAME.registerComponent('registerevents', {
 
         // update variable so info window can load right product
 
+        // if same marker detected again do not update audio source
         if (lastDetectedMarker != markerValue)
         {
           lastDetectedMarker = markerValue;
           changeAudioSource(lastDetectedMarker);
-        }       
+        }
 
 				// TODO: Add your own code here to react to the marker being found.
         if (markerValue == 0)
