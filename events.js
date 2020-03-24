@@ -52,7 +52,7 @@ function changePlaceInfo(markerNumber)
   document.getElementById("placeTitle").innerHTML = places[markerNumber].name;
   document.getElementById("placeDescription").innerHTML = places[markerNumber].description;
   document.getElementById("infoVideo").src = places[markerNumber].videoLink;
-  document.getElementById("infoKartta").src = places[markerNumber].mapImage;
+  document.getElementById("map").src = places[markerNumber].mapImage;
 };
 
 window.addEventListener('camera-init', (data) => {
