@@ -1,5 +1,5 @@
 let lastDetectedMarker;
-var parentWindow = window.parent;
+//var parentWindow = window.parent;
 
 function changeAudioSource(markerNumber)
 {
@@ -28,7 +28,7 @@ AFRAME.registerComponent('registerevents', {
         if (lastDetectedMarker != markerValue)
         {
           lastDetectedMarker = markerValue;
-          parentWindow.lastDetectedMarker = markerValue;
+          parent.lastDetectedMarker = markerValue;
           changeAudioSource(lastDetectedMarker);
         }
 
