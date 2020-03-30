@@ -44,6 +44,7 @@ function toggleInfo()
 function changeAudioSource(markerNumber)
 {
   document.getElementById("audioPlayer").setAttribute('src', places[markerNumber].narrationLink);
+  document.getElementById("audioPlayer").play();
 };
 
 // changes info text, image and video to match marker
