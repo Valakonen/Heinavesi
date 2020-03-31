@@ -17,15 +17,30 @@
     "nodes" : [
         {
             "mesh" : 0,
-            "name" : "Rock-08.000"
+            "name" : "Rock-08.000",
+            "scale" : [
+                3.972431182861328,
+                3.972431182861328,
+                3.972431182861328
+            ]
         },
         {
             "mesh" : 1,
-            "name" : "Rock-08.001"
+            "name" : "Rock-08.001",
+            "scale" : [
+                3.972431182861328,
+                3.972431182861328,
+                3.972431182861328
+            ]
         },
         {
             "mesh" : 2,
-            "name" : "Plane.001"
+            "name" : "Plane.001",
+            "scale" : [
+                3.972431182861328,
+                3.972431182861328,
+                3.972431182861328
+            ]
         }
     ],
     "materials" : [
@@ -151,7 +166,7 @@
         {
             "bufferView" : 5,
             "mimeType" : "image/jpeg",
-            "name" : "rock-08_lod1_color.jpg"
+            "name" : "rock-08_lod1_color"
         },
         {
             "bufferView" : 6,
