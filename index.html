@@ -42,6 +42,7 @@
               <a-asset-item id="hoikansaari" src="3D\Hoikansaari.gltf"></a-asset-item>
               <a-asset-item id="tupa" src="3d\Tupa_test_1.gltf"></a-asset-item>
               <a-asset-item id="tafoni" src="3D\Tafoni.gltf"></a-asset-item>
+              <a-asset-item id="jalkakivi" src="3D\Jalkakivi.gltf"></a-asset-item>
             </a-assets>
 
      <a-entity camera>
@@ -64,7 +65,7 @@
 
             <!-- Marker 3 -->
             <a-marker smooth='true' type='barcode' value='3' registerevents>
-
+              <a-entity gltf-model="#jalkakivi" scale="1 1 1"></a-entity>
             </a-marker>
 
       </a-entity>
