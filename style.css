@@ -37,6 +37,11 @@
     font-family: Arial;
 }
 
+#audioPlayer
+{
+  margin-top: 10px;
+}
+
 #info
 {
   z-index: 9900;
